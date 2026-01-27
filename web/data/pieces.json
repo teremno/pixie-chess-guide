@@ -1,0 +1,12 @@
+[
+    {
+        "id": "epee-pawn",
+        "name": "Épée Pawn",
+        "type": "pawn",
+        "short": "Has global en passant range.",
+        "rules": [
+            "Can capture en passant globally when conditions are met."
+        ],
+        "updated": "2026-01-27"
+    }
+]
