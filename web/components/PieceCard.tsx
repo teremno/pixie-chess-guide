@@ -9,21 +9,21 @@ interface Piece {
 
 export default function PieceCard({ piece }: { piece: Piece }) {
     return (
-        <div className="flex h-full flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
-            <div className="mb-2 flex items-start justify-between gap-2">
-                <h3 className="text-lg font-semibold">
+        <div className="group flex h-full flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-purple-200 hover:shadow-md dark:border-gray-800 dark:bg-gray-900 dark:hover:border-purple-900/50">
+            <div className="mb-3 flex items-start justify-between gap-2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {piece.name}
                 </h3>
-                <span className="shrink-0 rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                <span className="shrink-0 rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-semibold text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
                     {piece.type}
                 </span>
             </div>
-            <p className="mb-4 flex-grow text-sm text-gray-600 dark:text-gray-400">
+            <p className="mb-6 flex-grow text-sm leading-relaxed text-gray-600 dark:text-gray-400">
                 {piece.short}
             </p>
             <Link
                 href={`/pieces/${piece.id}`}
-                className="inline-block rounded bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                className="inline-flex items-center justify-center rounded-lg bg-purple-600 px-4 py-2 text-center text-sm font-semibold text-white transition-all hover:bg-purple-700 active:scale-95"
             >
                 View Details
             </Link>
