@@ -31,8 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ChessBackground />
-        <div className="flex min-h-screen items-center justify-center px-4 py-8 md:px-8 md:py-12 lg:px-12">
-          <div className="mx-auto w-full max-w-6xl overflow-hidden rounded-[2.5rem] border border-white/5 bg-purple-950/10 p-6 backdrop-blur-xl md:p-12 lg:p-16">
+        {/* Full-screen Glass Overlay */}
+        <div className="min-h-screen w-full bg-purple-950/20 backdrop-blur-3xl">
+          <div className="mx-auto max-w-6xl px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16">
             <Header />
             <main>
               {children}

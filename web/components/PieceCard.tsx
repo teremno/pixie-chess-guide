@@ -9,7 +9,7 @@ interface Piece {
 
 export default function PieceCard({ piece }: { piece: Piece }) {
     return (
-        <div className="group flex h-full flex-col rounded-xl border border-white/5 bg-white/5 p-6 shadow-sm transition-all hover:border-purple-500/30 hover:shadow-md">
+        <div className="group flex h-full flex-col rounded-xl bg-white/5 p-6 transition-all hover:bg-white/10">
             <div className="mb-3 flex items-start justify-between gap-2">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {piece.name}

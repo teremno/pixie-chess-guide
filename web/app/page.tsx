@@ -134,7 +134,7 @@ export default function Home() {
           ].map((feature, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-xl border border-white/5 bg-white/5 p-8 transition-colors hover:border-purple-500/30"
+              className="relative overflow-hidden rounded-xl bg-white/5 p-8 transition-colors hover:bg-white/10"
             >
               <div className="absolute right-4 top-4 rounded-full bg-purple-100 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
                 Waitlist
