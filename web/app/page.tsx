@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-16 pb-16 md:gap-24 md:pb-24">
       {/* Hero Section */}
-      <section className="relative flex min-h-[60vh] flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/5 bg-purple-950/20 px-4 py-20 text-center backdrop-blur-md md:min-h-[75vh]">
+      <section className="relative flex flex-col items-center justify-center py-12 text-center md:py-20">
         {/* Animated Background Glow */}
         <div className="animate-glow pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 bg-purple-600/20 blur-[120px] md:h-[700px] md:w-[700px]"></div>
 
@@ -134,7 +134,7 @@ export default function Home() {
           ].map((feature, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-xl border border-gray-200 bg-white p-8 transition-colors hover:border-purple-200 dark:border-white/5 dark:bg-white/5 dark:backdrop-blur-sm dark:hover:border-purple-500/30"
+              className="relative overflow-hidden rounded-xl border border-white/5 bg-white/5 p-8 transition-colors hover:border-purple-500/30"
             >
               <div className="absolute right-4 top-4 rounded-full bg-purple-100 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
                 Waitlist
