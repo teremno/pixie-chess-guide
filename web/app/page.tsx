@@ -6,17 +6,17 @@ import pieces from "@/data/pieces.json";
 export default function Home() {
   // Get first 6 pieces for preview
   const previewPieces = pieces.slice(0, 6);
-  
+
   return (
     <div className="flex flex-col gap-16 pb-16 md:gap-24 md:pb-24">
       {/* Hero Section */}
-      <section className="relative flex min-h-[60vh] flex-col items-center justify-center overflow-hidden rounded-3xl bg-gray-950 px-4 py-20 text-center md:min-h-[75vh]">
+      <section className="relative flex min-h-[60vh] flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/5 bg-purple-950/20 px-4 py-20 text-center backdrop-blur-md md:min-h-[75vh]">
         {/* Animated Background Glow */}
         <div className="animate-glow pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 bg-purple-600/20 blur-[120px] md:h-[700px] md:w-[700px]"></div>
-        
+
         {/* Subtle Sparkles (Pure CSS) */}
-        <div className="animate-sparkle pointer-events-none absolute inset-0 -z-10 opacity-20" 
-             style={{ backgroundImage: 'radial-gradient(circle, #a855f7 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+        <div className="animate-sparkle pointer-events-none absolute inset-0 -z-10 opacity-20"
+          style={{ backgroundImage: 'radial-gradient(circle, #a855f7 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
         {/* Hero Logo / Banner */}
         <div className="relative mb-8 h-32 w-full max-w-sm md:h-48 md:max-w-md lg:h-56 lg:max-w-xl">
@@ -100,13 +100,13 @@ export default function Home() {
               </p>
             </div>
           )}
-          
+
           {/* Placeholders for coming soon pieces if catalog is small */}
           {previewPieces.length < 3 && Array.from({ length: 3 - previewPieces.length }).map((_, i) => (
             <div key={`placeholder-${i}`} className="flex h-full flex-col rounded-xl border border-dashed border-gray-200 p-6 dark:border-gray-800">
-                <div className="mb-3 h-6 w-1/2 rounded-md bg-gray-100 dark:bg-gray-800"></div>
-                <div className="mb-6 h-4 w-full rounded-md bg-gray-50 dark:bg-gray-900"></div>
-                <div className="mt-auto h-10 w-full rounded-lg bg-gray-100 dark:bg-gray-800"></div>
+              <div className="mb-3 h-6 w-1/2 rounded-md bg-gray-100 dark:bg-gray-800"></div>
+              <div className="mb-6 h-4 w-full rounded-md bg-gray-50 dark:bg-gray-900"></div>
+              <div className="mt-auto h-10 w-full rounded-lg bg-gray-100 dark:bg-gray-800"></div>
             </div>
           ))}
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
           ].map((feature, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-xl border border-gray-200 bg-white p-8 transition-colors hover:border-purple-200 dark:border-gray-800 dark:bg-gray-900/50 dark:hover:border-purple-900/50"
+              className="relative overflow-hidden rounded-xl border border-gray-200 bg-white p-8 transition-colors hover:border-purple-200 dark:border-white/5 dark:bg-white/5 dark:backdrop-blur-sm dark:hover:border-purple-500/30"
             >
               <div className="absolute right-4 top-4 rounded-full bg-purple-100 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
                 Waitlist
